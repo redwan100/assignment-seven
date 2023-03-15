@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Blog Page</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body>
+
+    <div class="w-full min-h-screen bg-slate-100 grid place-content-center">
+        <button id="backBtn" class="bg-slate-400 w-max fixed
+        top-5 left-5 py-1 px-2  rounded-md shadow-md text-slate-900 hover:bg-slate-300 transition">Go Back</button>
+        <div class="container mx-auto w-[90%] grid place-content-center">
+            <div class="bg-white rounded-md shadow-lg border-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- QUESTION 1 -->
+                <div class=" p-4 rounded-md m-2 bg-slate-100/40">
+                    <h1 class="sm:text-xl md:max-2xl font-bold text-slate-900">What is difference map, filter foreach, and find method <span class="text-rose-600">?</span></h1>
+
+                    <div class="text-slate-700 text-sm sm:text-[14px] mt-2 space-y-2">
+                        <p>map method modify element and return an array</p>
+                        <hr>
+                        <p> filter executes the callback and check its return value. If the value is true element remains in the resulting array but if the return value is false the element will be removed for the resulting array.</p>
+                        <hr>
+                        <p>
+                             forEach just loop over the array and executes the callback
+                        </p>
+                        <hr>
+                        <p>The find method returns the value of the first element that passes a test. </p>
+                    </div>
+
+                </div>
+
+                <!-- QUESTION 2 -->
+                 <div class=" p-4 rounded-md m-2 bg-slate-100/40">
+                    <h1 class="sm:text-xl md:max-2xl font-bold text-slate-900">What is difference local storage session storage and cookie storage <span class="text-rose-600">?</span></h1>
+
+                    <div class="text-slate-700 text-sm sm:text-[14px] mt-2 space-y-2">
+                        <p>Local storage is useful for storing data that the user will need to access later, such as offline data. </p>
+                        <hr>
+                        <p>  Session storage is a great way to improve the performance of your web applications</p>
+                        <hr>
+                        <p>
+                               Cookies are a good choice for storing data that should not be persisted for a long time, such as session storage
+                        </p>
+                    </div>
+
+                </div>
+                <!-- QUESTION 3 -->
+                 <div class="p-4 rounded-md m-2 bg-slate-100/40">
+                    <h1 class="sm:text-xl md:max-2xl font-bold text-slate-900">Event loop definition<span class="text-rose-600">!</span></h1>
+
+                    <div class="text-slate-700 text-sm sm:text-[14px] mt-2 space-y-2">
+                        <p> Cookies are a good choice for storing data that should not be persisted for a long time, such as session  </p>
+                    </div>
+
+                </div>
+                <!-- QUESTION 4 -->
+                 <div class="p-4 rounded-md m-2 bg-slate-100/40">
+                    <h1 class="sm:text-xl md:max-2xl font-bold text-slate-900">Explain quiz timer function<span class="text-rose-600">!</span></h1>
+
+                    <div class="text-slate-700 text-sm sm:text-[14px] mt-2 space-y-2">
+                        <p> quizTimer() function mainly working for stop setInterval() calling </p>
+                    </div>
+                </div>
+
+                <!-- QUESTION 5 -->
+                 <div class="p-4 rounded-md m-2 bg-slate-100/40">
+                    <h1 class="sm:text-xl md:max-2xl font-bold text-slate-900">Explain chooseQuiz() function<span class="text-rose-600">!</span></h1>
+
+                    <div class="text-slate-700 text-sm sm:text-[14px] mt-2 space-y-2">
+                        <p> Checking by parameter will not add to the array if my item is selected. And if there is no select then it will be added to the array</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('backBtn').addEventListener('click',()=>{
+            location.replace('./index.html')
+        })
+    </script>
+</body>
+</html>
